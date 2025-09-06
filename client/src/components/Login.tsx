@@ -4,18 +4,20 @@ import { ethers } from 'ethers';
 
 interface LoginProps {
   onLogin: (account: string) => void;
+  setShowQuiz: (show: boolean) => void;
 }
 
-const Login: React.FC<LoginProps> = ({ onLogin }) => {
+const Login: React.FC<LoginProps> = ({ onLogin, setShowQuiz }) => {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const handleLogin = async () => {
     if (window.ethereum) {
       try {
         // Request account access
-        const provider = new ethers.BrowserProvider(window.ethereum);
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts" });
         onLogin(accounts[0]);
+        setShowQuiz(true);
       } catch (error) {
         console.error("Error connecting to MetaMask:", error);
         setErrorMessage("Failed to connect wallet. Please try again.");
