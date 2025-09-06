@@ -1,0 +1,19 @@
+{
+  "timestamp": "2024-02-20T00:00:00Z",
+  "version": 1,
+  "farcaster": {
+    "client": {
+      "name": "Crypto Quest Study Buddy",
+      "description": "A crypto quiz application for Farcaster",
+      "icon": "https://crypto-quest-study-buddy.vercel.app/icon.png",
+      "url": "https://crypto-quest-study-buddy.vercel.app"
+    },
+    "permissions": [
+      "read",
+      "write"
+    ],
+    "domains": [
+      "crypto-quest-study-buddy.vercel.app"
+    ]
+  }
+}
