@@ -16,9 +16,9 @@
       "crypto-quest-study-buddy.vercel.app"
     ],
     "accountAssociation": {
-    "header": "$FARCASTER_HEADER",
-      "payload": "$FARCASTER_PAYLOAD",
-      "signature": "$FARCASTER_SIGNATURE"
+    "header": "eyJmaWQiOjEzMjY0ODUsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHhCQTI4OTM0NUY1OUQ1MjNiNDY2MDczNTU4ODQyNTQ3QzQ4NzQ0NDM5In0",
+    "payload": "eyJkb21haW4iOiJjcnlwdG8tcXVlc3Qtc3R1ZHktYnVkZHkudmVyY2VsLmFwcCJ9",
+    "signature": "MHhkZTY1NTE2ZDc5ZTIxZDliNWYyZGM5NmUyOTY1MTEyYjNlMTU4NzMwYzQ5OTg0MTkwMDUxZDQwMDY3OTNkMWY5MmQ4YzM5ODg2ZTc0ZTgzOGNiOTY1MmExZDhmMjZhZTdkNGRmMDcwY2NlNzMzYzkwZDIzZTVkZWE5ZDk5YTM2OTFi"
   }
   }
 }
