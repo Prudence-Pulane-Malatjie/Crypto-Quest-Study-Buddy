@@ -1,0 +1,26 @@
+/home/wtc/Crypto-Quest-Study-Buddy/
+├── .git/
+├── .gitignore
+├── README.md
+├── client/
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── postcss.config.js
+│   ├── src/
+│   │   ├── App.tsx
+│   │   ├── components/
+│   │   │   ├── FunFactModal.tsx
+│   │   │   ├── Login.tsx
+│   │   │   └── Quiz.tsx
+│   │   ├── index.css
+│   │   ├── main.tsx
+│   │   └── vite-env.d.ts
+│   ├── tailwind.config.js
+│   ├── tsconfig.json
+│   ├── tsconfig.node.json
+│   └── vite.config.ts
+└── server/
+    ├── index.js
+    ├── package.json
+    └── package-lock.json

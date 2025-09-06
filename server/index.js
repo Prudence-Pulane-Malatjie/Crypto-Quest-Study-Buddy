@@ -1,4 +1,9 @@
-// ... existing code ...
+const express = require('express');
+const cors = require('cors');
+const app = express();
+const port = 3001;
+
+app.use(cors());
 app.use(express.json());
 
 // A simple array of quiz questions
@@ -22,9 +27,25 @@ app.get("/api/questions", (req, res) => {
   res.json(quizQuestions);
 });
 
-// TODO: Create an endpoint for fun facts
+// Fun facts about crypto in Africa
+const funFacts = [
+    "Africa is one of the fastest-growing crypto markets globally, with a 1,200% increase in value from 2020 to 2021.",
+    "Nigeria, Kenya, and South Africa are among the top countries in the world for crypto adoption.",
+    "Many Africans use cryptocurrency to hedge against inflation and currency devaluation.",
+    "Mobile money is huge in Africa, and crypto is seen as the next step in financial evolution for the continent.",
+    "Blockchain technology is being explored in Africa for everything from tracking agricultural products to ensuring fair elections."
+];
+
+// API endpoint to get a random fun fact
+app.get("/api/funfact", (req, res) => {
+  const fact = funFacts[Math.floor(Math.random() * funFacts.length)];
+  res.json({ fact });
+});
 
 app.get("/", (req, res) => {
   res.send("Hello from the Crypto Quest Study Buddy server!");
 });
-// ... existing code ...
+
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
