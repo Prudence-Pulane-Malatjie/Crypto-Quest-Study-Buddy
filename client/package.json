@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:meta": "node scripts/build-farcaster-json.js"
   },
   "dependencies": {
     "ethers": "^5.7.2",
