@@ -11,9 +11,9 @@
     "permissions": ["read","write"],
     "domains": ["crypto-quest-study-buddy.vercel.app"],
     "accountAssociation": {
-      "header": "Farcaster-Account-Association",
-      "payload": "{\"address\":\"0x123...\",\"signature\":\"0x456...\"}",
-      "signature": "0x789..."
+      "header": "eyJmaWQiOjEzMjY0ODUsInR5cGUiOiJhdXRoIiwia2V5IjoiMHg4NzQ0RGM3Yzc0NzU0YzUwMWJEOTBjZTg3YjNBOWFhOEMxYTA0RDMxIn0",
+      "payload": "eyJkb21haW4iOiJjcnlwdG8tcXVlc3Qtc3R1ZHktYnVkZHkudmVyY2VsLmFwcCJ9",
+      "signature": "ENRt2F5uFYdIaVJ/KyBMPWlA5qohibsV4lYBeDPkxFpTaHvQNMKOabXUVThZ8dhfnNvQYy5kS3x9sGVxDsb5Axs="
     }
   }
 }
